@@ -1,0 +1,2 @@
+export const LOCAL_STORAGE_KEYS_TO_KEEP = []
+export const KORA_PROJECT_ID = 'KORA_PROJECT_ID'
