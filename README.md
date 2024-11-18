@@ -14,7 +14,7 @@ Además, FormBuilder facilita la integración con APIs, permitiéndote definir c
 - Puede experimentar **cambios significativos** en su API, funcionalidades o estructura en futuras actualizaciones.
 - Aunque puedes descargarla y probar su funcionamiento, **no se recomienda para aplicaciones en producción.**
 
-Si decides probar esta versión, agradeceremos mucho tus comentarios, sugerencias o reportes de errores en la sección de [Issues](https://github.com/tu-usuario/tu-repositorio/issues). ¡Tu feedback nos ayuda a mejorar!
+Si decides probar esta versión, agradeceremos mucho tus comentarios, sugerencias o reportes de errores en la sección de [Issues](https://github.com/korautils). ¡Tu feedback nos ayuda a mejorar!
 
 ---
 
