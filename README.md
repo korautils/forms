@@ -1,4 +1,5 @@
 # KoraForms (🚧 Alpha)
+
 FormBuilder es una librería diseñada para ofrecer una solución eficiente y versátil en la creación de formularios dinámicos con patrones de diseño avanzados. Implementa patrones como Builder, Observer y Factory, lo que permite centralizar la lógica de los componentes, simplificar la integración y maximizar la reutilización en proyectos que requieren un enfoque ágil y adaptable.
 
 Con FormBuilder, puedes generar formularios complejos de manera intuitiva, mantener un código limpio y organizado, y ajustarlos rápidamente a las necesidades cambiantes de tu proyecto. La librería incluye herramientas para gestionar el estado de los componentes hijos creados con ElementBuilder, así como para configurar y aplicar validaciones de manera flexible.
@@ -8,6 +9,7 @@ Además, FormBuilder facilita la integración con APIs, permitiéndote definir c
 ### **Nota sobre la versión alpha**
 
 ⚠️ **Esta librería está en fase alpha.** Actualmente se encuentra en una etapa de pruebas, lo que significa que:
+
 - La versión publicada **no es estable** y puede contener errores.
 - Puede experimentar **cambios significativos** en su API, funcionalidades o estructura en futuras actualizaciones.
 - Aunque puedes descargarla y probar su funcionamiento, **no se recomienda para aplicaciones en producción.**
@@ -28,22 +30,20 @@ npm install @korautils/forms
 
 ```ts
 import './App.css'
-import { Box } from '@mui/material'
 import { Fragment } from 'react/jsx-runtime'
-import FormBuilder from '@/modules/builder/classes/builders/FormBuilder'
-import ElementBuilder from '@/modules/builder/classes/builders/ElementBuilder'
+import { FormBuilder, ElementBuilder } from '@korautils/forms'
 
 function App() {
   return (
     <Fragment>
       <h2>Test FormBuilder</h2>
 
-      <Box
-        sx={{
+      <div
+        style={{
           width: '100%',
           display: 'block',
           backgroundColor: '#f4f4f4',
-          padding: 2,
+          padding: '20px',
         }}
       >
         {FormBuilder.newForm()
@@ -75,6 +75,22 @@ function App() {
               })
           )
           .addItem(
+            ElementBuilder.newElement().select({
+              label: 'Selector',
+              name: 'options',
+              options: [
+                {
+                  label: 'Opción 1',
+                  value: 'option1',
+                },
+                {
+                  label: 'Opción 2',
+                  value: 'option1',
+                },
+              ],
+            })
+          )
+          .addItem(
             ElementBuilder.newElement().button({
               type: 'submit',
               name: 'button',
@@ -82,7 +98,7 @@ function App() {
             })
           )
           .build()}
-      </Box>
+      </div>
     </Fragment>
   )
 }
