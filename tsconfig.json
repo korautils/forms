@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
     "target": "ESNext",
+    "outDir": "./dist",
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
     "skipLibCheck": true,
-    "esModuleInterop": false,
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -13,15 +14,16 @@
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "declaration": true,
-    "declarationDir": "./dist",
+    "declaration": true,          // Habilita la generación de archivos .d.ts
+    "declarationDir": "./dist",   // Directorio donde se guardarán los archivos .d.ts
     "jsx": "react-jsx",
     "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"],
       "@/images/*": ["public/assets/images/*"]
-    }
+    },
+    "sourceMap": true,            // Opcional, para mapear las definiciones
+    "declarationMap": true        // Opcional, genera un mapa de las definiciones .d.ts
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

@@ -1,7 +1,7 @@
 {
   "name": "@korautils/forms",
   "private": false,
-  "version": "0.0.2-alpha.1",
+  "version": "0.0.2-alpha.2",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -11,7 +11,7 @@
     "prod": "vite --host --port=8282",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "bundle": "tsup src/index.ts"
+    "bundle": "tsup"
   },
   "dependencies": {
     "@codemirror/lang-javascript": "^6.1.8",
