@@ -21,7 +21,7 @@ Si decides probar esta versión, agradeceremos mucho tus comentarios, sugerencia
 Para instalar esta versión alpha, ejecuta:
 
 ```bash
-npm install tu-libreria@alpha
+npm install @korautils/forms
 ```
 
 # Implementación
