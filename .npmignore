@@ -15,3 +15,5 @@ HELPER.md
 pnpm-lock.yaml
 .nvmrc
 .gitignore
+demo
+.github

@@ -1,1 +1,0 @@
-import{j as a}from"./index-8bf1a5ca.js";import{M as m}from"./TextField-2ed3d21b.js";const u=({label:e,value:t,placeholder:i,onChange:r,...l})=>a(m,{type:"email",label:e,size:"small",value:t,placeholder:i,onChange:r,fullWidth:!0,...l});export{u as default};

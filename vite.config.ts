@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import path from 'path';
+import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -8,7 +8,10 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
-    }
+    },
   },
-  base: process.env.NODE_ENV === 'production' ? '/forms/' : '/', // Condicional para que solo afecte en producción
+  base: process.env.NODE_ENV === 'production' ? '/forms/' : '/',
+  build: {
+    outDir: 'demo',
+  },
 })

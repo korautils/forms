@@ -48,7 +48,7 @@ const AlertResponse: React.FC<Props> = ({
     }
   }
 
-  // Determina el tipo de alerta y el título basado en el estado
+  // Determines the alert type and title based on the state
   const getAlertProps = () => {
     if (!loading && errorMessage) {
       return {
@@ -61,7 +61,7 @@ const AlertResponse: React.FC<Props> = ({
     if (!loading && !error && successMessage) {
       return {
         severity: 'success',
-        title: 'Correcto',
+        title: 'Success',
         message: successMessage,
       }
     }
@@ -78,16 +78,16 @@ const AlertResponse: React.FC<Props> = ({
     } else if (response && [200, 201].includes(response.status)) {
       return {
         severity: 'success',
-        title: 'Correcto',
-        message: getCustomApiResponse() || 'La operación fue exitosa',
+        title: 'Success',
+        message: getCustomApiResponse() || 'The operation was successful',
       }
     }
 
     return {
       severity: 'info',
-      title: loading ? 'Enviando...' : 'Información',
+      title: loading ? 'Sending...' : 'Info',
       message: loading
-        ? 'Espera estamos haciendo algo'
+        ? 'Wait, we are doing something'
         : getCustomApiResponse() || getProp(response, 'statusText'),
     }
   }
@@ -99,16 +99,16 @@ const AlertResponse: React.FC<Props> = ({
       {open && (
         <Alert
           severity={severity as any}
-          className="mb-1"
+          sx={{ marginBottom: 2.4 }}
           action={
             loading ? undefined : (
               <IconButton
-                aria-label="close"
-                color="inherit"
+                aria-label='close'
+                color='inherit'
                 onClick={handleClose}
-                size="small"
+                size='small'
               >
-                <CloseIcon fontSize="inherit" />
+                <CloseIcon fontSize='inherit' />
               </IconButton>
             )
           }
