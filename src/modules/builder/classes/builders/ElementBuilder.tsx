@@ -172,7 +172,6 @@ class ElementBuilder {
   }
 
   textField(props: InputProps = {}) {
-    console.log('INPUT P^ROSDFS', props)
     return this.instance(TextField, 'INPUT', props)
   }
 
@@ -358,8 +357,6 @@ class ElementBuilder {
     const { component: Component, props } = this
     this.checkOptions(origin)
 
-    console.log('ORIGINAL PROPS', props)
-
     const validProps = extractValidProps(this.elementType, {
       ...props,
       inputProps: props.maxLength
@@ -369,8 +366,6 @@ class ElementBuilder {
         : undefined,
       formHandler,
     })
-
-    console.log('VALID PROPS:', validProps)
 
     return (
       <>
