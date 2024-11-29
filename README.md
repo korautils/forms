@@ -56,7 +56,7 @@ To install this alpha version, run:
 $ npm install @korautils/forms
 ```
 
-# Implementación
+# Implementation
 ```ts
 import './App.css'
 import { Fragment } from 'react/jsx-runtime'
