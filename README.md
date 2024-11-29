@@ -1,5 +1,7 @@
 # @korautils/forms (🚧 Alpha)
 
+![image](https://github.com/user-attachments/assets/ccad1514-7b15-4952-9856-fd03b971403a)
+
 **@korautils/forms** is a library designed to provide an efficient and versatile solution for creating dynamic forms with advanced design patterns. It implements patterns such as Builder, Observer, and Factory, allowing you to centralize component logic, simplify integration, and maximize reusability in projects that require an agile and adaptable approach.
 
 With **@korautils/forms**, you can generate complex forms intuitively, maintain clean and organized code, and quickly adapt them to your project's changing needs. The library includes tools to manage the state of child components created with ElementBuilder, as well as to configure and apply validations flexibly.
@@ -65,7 +67,7 @@ import { FormBuilder, ElementBuilder, FormHandlerProps } from '@korautils/forms'
 function App() {
   return (
     <Fragment>
-      <h2>Test FormBuilder</h2>
+      <h2>Test FormBuilder - @korautils/forms</h2>
 
       <div
         style={{

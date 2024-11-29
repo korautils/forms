@@ -37,9 +37,6 @@ const ElementRenderer: React.FC<Props> = React.forwardRef(function Element(
         flexDirection: 'column',
         gap: '3px',
         width: '100%',
-        // '&:not(:has(.MuiStack-root))': {
-        //   paddingTop: '8px',
-        // },
         '.label-component': {
           fontWeight: 'bold',
           display: 'block',
@@ -47,7 +44,7 @@ const ElementRenderer: React.FC<Props> = React.forwardRef(function Element(
       }}
     >
       {labelVariant === 'UNLABELING' && elementType !== 'CHECKBOX' && (
-        <label className="label-component" htmlFor={name}>
+        <label className='label-component' htmlFor={name}>
           {savedLabel}:
         </label>
       )}

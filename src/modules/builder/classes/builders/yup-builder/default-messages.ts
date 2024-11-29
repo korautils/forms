@@ -8,28 +8,28 @@ export const getMessage = ({ type, defaultMessage, value }: MessageDetail) => {
   switch (type) {
     case 'required':
     case 'string':
-      return 'El campo es requerido'
+      return 'This field is required'
     case 'number':
-      return 'Debes ingresar un número'
+      return 'You must enter a number'
     case 'boolean':
-      return 'Debes seleccionar una opción'
+      return 'You must select an option'
     case 'object':
-      return 'Debes seleccionar una opción'
+      return 'You must select an option'
     case 'min':
-      return `Ingresa mínimo ${value} dígitos`
+      return `Enter at least ${value} digits`
     case 'max':
-      return `Ingresa máximo ${value} dígitos`
+      return `Enter at most ${value} digits`
     case 'date':
-      return 'Ingresa una fecha válida'
+      return 'Enter a valid date'
     case 'array':
-      return 'Debe agregar al menos un elemento'
+      return 'You must add at least one element'
     case 'url':
-      return 'Debe ingresar una URL válida'
+      return 'You must enter a valid URL'
     case 'email':
-      return 'Debe ingresar un correo válido'
+      return 'You must enter a valid email'
     case 'pattern':
-      return `El patrón no coincide: ${value}`
+      return `The pattern does not match: ${value}`
     default:
-      return 'El campo es requerido'
+      return 'This field is required'
   }
 }
