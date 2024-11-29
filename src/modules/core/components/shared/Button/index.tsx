@@ -1,4 +1,6 @@
-import ButtonComponent, { variantOptions } from './ButtonComponent'
+import ButtonComponent, {
+  variantOptions,
+} from '@/modules/core/components/shared/Button/ButtonComponent'
 
 export type { variantOptions }
 

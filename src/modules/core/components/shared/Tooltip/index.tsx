@@ -1,3 +1,3 @@
-import Tooltip from './Tooltip';
+import Tooltip from '@/modules/core/components/shared/Tooltip/Tooltip'
 
-export default Tooltip;
+export default Tooltip

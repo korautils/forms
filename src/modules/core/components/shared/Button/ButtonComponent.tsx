@@ -1,9 +1,10 @@
 import React from 'react'
-import { ButtonProps as MuiButtonProps } from '@mui/material'
-import { ButtonWrapper } from './styles'
 import classNames from 'classnames'
+import { ButtonProps as MuiButtonProps } from '@mui/material'
+
 import CameraAltIcon from '@mui/icons-material/CameraAlt'
-import Tooltip from '../Tooltip'
+import Tooltip from '@/modules/core/components/shared/Tooltip'
+import { ButtonWrapper } from '@/modules/core/components/shared/Button/styles'
 
 export type variantOptions = 'text' | 'outlined' | 'contained' | undefined
 

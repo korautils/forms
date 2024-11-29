@@ -1,17 +1,13 @@
 import { URL_REGEX } from '@/modules/core/constants/regex'
-import { formatBearerToken, getProp } from '@/modules/core/utils'
+import { getProp } from '@/modules/core/utils'
 import axios, { AxiosError } from 'axios'
-import { useState, useCallback, useContext } from 'react'
-import { getProjectId } from '../utils/fetch-utils'
+import { useState, useCallback } from 'react'
 import { ApiRequestConfig } from '../interfaces/general'
 import { AxiosConfig } from '@/modules/config/axios'
-// import { API_SERVER } from '@/config/axios'
 
 type TYPE = 'single' | 'multiple'
 
 const useApiRequest = () => {
-  const authToken = '',
-    refreshToken = ''
   const [loading, setLoading] = useState<boolean>(false)
   const [responses, setResponse] = useState<any[]>([])
   const [error, setError] = useState<AxiosError | null>(null)

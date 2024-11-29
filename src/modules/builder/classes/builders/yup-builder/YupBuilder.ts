@@ -1,7 +1,7 @@
 import * as yupUtil from 'yup'
-import { YupRule } from './types'
-import { getMessage } from './default-messages'
 import { EMAIL_REGEX, URL_REGEX } from '@/modules/core/constants/regex'
+import { YupRule } from '@/modules/builder/classes/builders/yup-builder/types'
+import { getMessage } from '@/modules/builder/classes/builders/yup-builder/default-messages'
 
 class YupBuilder {
   schema: Record<string, yupUtil.AnySchema> = {}

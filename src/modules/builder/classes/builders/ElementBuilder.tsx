@@ -1,9 +1,12 @@
 import React from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import { SxProps, Theme } from '@mui/material'
-import { YupRule, YupSchema } from './yup-builder/types'
-import GroupButtonRenderer from '../../../core/components/shared/GroupButtonRenderer'
-import YupBuilder from './yup-builder'
+import {
+  YupRule,
+  YupSchema,
+} from '@/modules/builder/classes/builders/yup-builder/types'
+import GroupButtonRenderer from '@/modules/core/components/shared/GroupButtonRenderer'
+import YupBuilder from '@/modules/builder/classes/builders/yup-builder'
 
 import {
   Autocomplete,

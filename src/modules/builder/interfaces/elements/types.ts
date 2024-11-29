@@ -6,8 +6,17 @@ import {
   UseFormSetValue,
   UseFormWatch,
 } from 'react-hook-form'
-import { ApiRequestConfig, ChildrenElement } from '../general'
-import { ELEMENT_TYPE, INPUT_VARIANTS, ItemOptionProps } from './components'
+
+import {
+  ApiRequestConfig,
+  ChildrenElement,
+} from '@/modules/builder/interfaces/general'
+
+import {
+  ELEMENT_TYPE,
+  INPUT_VARIANTS,
+  ItemOptionProps,
+} from '@/modules/builder/interfaces/elements/components'
 
 export type PROP_NAMES =
   | 'name'

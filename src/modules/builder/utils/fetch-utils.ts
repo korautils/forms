@@ -1,7 +1,11 @@
 import { getProp, isArrayEmpty } from '@/modules/core/utils'
-import { KORA_PROJECT_ID } from '@/modules/core/constants/localStorageConstants'
-import { ApiRequestConfig, ObjectKeys, TableItem } from '../interfaces/general'
 import { getLocalStorageFromKey } from '@/modules/core/utils/localStorage'
+import { KORA_PROJECT_ID } from '@/modules/core/constants/localStorageConstants'
+import {
+  ApiRequestConfig,
+  ObjectKeys,
+  TableItem,
+} from '@/modules/builder/interfaces/general'
 
 export const getTableItems = (
   status: any,
