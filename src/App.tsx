@@ -7,7 +7,12 @@ import { FormBuilder, ElementBuilder, FormHandlerProps } from '@/index'
 function App() {
   return (
     <Fragment>
-      <h2>Test FormBuilder - @korautils/forms</h2>
+      <h2>
+        Test FormBuilder{' '}
+        <a href='https://github.com/korautils/forms' target='_blank'>
+          @korautils/forms
+        </a>
+      </h2>
 
       <Box
         sx={{
