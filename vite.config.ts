@@ -9,5 +9,6 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, 'src'),
     }
-  }
+  },
+  base: process.env.NODE_ENV === 'production' ? '/forms/' : '/', // Condicional para que solo afecte en producción
 })
