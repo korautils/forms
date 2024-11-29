@@ -1,15 +1,15 @@
-# Instalar paquetes
+# Install Packages
 ```bash
-# Instalar tsup, la librería que nos ayudará a compilar...
+# Install tsup, the library that will help us compile...
 npm i -D tsup
 ```
 
-# Publicar...
+# Publish...
 ```bash
 npm version patch && npm run bundle && npm publish --access=public
 ```
 
-# Verificar la publicación
+# Verify Publication
 ```bash
 npm info @korautils/forms
 ```

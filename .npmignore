@@ -11,7 +11,7 @@ tsconfig.json
 tsconfig.node.json
 tsup.config.tsconfig
 vite.config.json
-NOTAS.md
+HELPER.md
 pnpm-lock.yaml
 .nvmrc
 .gitignore
