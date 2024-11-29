@@ -2,9 +2,7 @@ import './App.css'
 import React from 'react'
 import { Box, Divider } from '@mui/material'
 import { Fragment } from 'react/jsx-runtime'
-import FormBuilder from '@/modules/builder/classes/builders/FormBuilder'
-import ElementBuilder from '@/modules/builder/classes/builders/ElementBuilder'
-import { FormHandlerProps } from './modules/builder/interfaces/elements/types'
+import { FormBuilder, ElementBuilder, FormHandlerProps } from '@/index'
 
 function App() {
   return (
