@@ -7,7 +7,7 @@ import { FormBuilder, ElementBuilder, FormHandlerProps } from '@/index'
 function App() {
   return (
     <Fragment>
-      <h2>Test FormBuilder</h2>
+      <h2>Test FormBuilder - @korautils/forms</h2>
 
       <Box
         sx={{
@@ -62,7 +62,7 @@ function App() {
             .addItem(
               ElementBuilder.newElement().select({
                 name: 'select',
-                label: 'Selector',
+                label: 'Static options',
                 options: [
                   { label: 'Static Option 1', value: 'option1' },
                   { label: 'Static Option 2', value: 'option2' },
@@ -73,7 +73,7 @@ function App() {
             .addItem(
               ElementBuilder.newElement().select({
                 name: 'select',
-                label: 'Selector',
+                label: 'Dynamic options',
                 api: {
                   method: 'GET',
                   url: 'https://jsonplaceholder.typicode.com/todos/',

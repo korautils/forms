@@ -172,6 +172,7 @@ class ElementBuilder {
   }
 
   textField(props: InputProps = {}) {
+    console.log('INPUT P^ROSDFS', props)
     return this.instance(TextField, 'INPUT', props)
   }
 
@@ -337,6 +338,10 @@ class ElementBuilder {
   addValidation(params: YupRule) {
     const yupRule = YupBuilder.createRule(params)
 
+    if (yupRule?.required) {
+      this.props.required = true
+    }
+
     if (yupRule) {
       this.yupRules.push(yupRule)
     }
@@ -353,6 +358,8 @@ class ElementBuilder {
     const { component: Component, props } = this
     this.checkOptions(origin)
 
+    console.log('ORIGINAL PROPS', props)
+
     const validProps = extractValidProps(this.elementType, {
       ...props,
       inputProps: props.maxLength
@@ -363,7 +370,7 @@ class ElementBuilder {
       formHandler,
     })
 
-    // console.log('VALID PROPS:', validProps)
+    console.log('VALID PROPS:', validProps)
 
     return (
       <>
