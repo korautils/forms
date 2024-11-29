@@ -29,7 +29,7 @@ function App() {
               method: 'POST',
               url: 'https://localhost:8000',
             })
-            //Agrega un textfield para agregar el nombre completo
+            //Agrega un campo de texto para ingresar el nombre completo
             .addItem(
               ElementBuilder.newElement()
                 .textField({
@@ -41,12 +41,14 @@ function App() {
                   required: { value: true, message: 'Full name is required' },
                 })
             )
+            // Agrega un campo de texto para ingresar el nombre de usuario
             .addItem(
               ElementBuilder.newElement().textField({
                 name: 'username',
                 label: 'Username',
               })
             )
+            // Agrega un campo de texto para ingresar un correo electrónico con validación de formato
             .addItem(
               ElementBuilder.newElement()
                 .textField({
