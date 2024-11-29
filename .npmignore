@@ -16,3 +16,4 @@ pnpm-lock.yaml
 .nvmrc
 .gitignore
 demo
+.github
