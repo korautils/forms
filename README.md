@@ -1,33 +1,62 @@
-# KoraForms (🚧 Alpha)
+# @korautils/forms (🚧 Alpha)
 
-FormBuilder es una librería diseñada para ofrecer una solución eficiente y versátil en la creación de formularios dinámicos con patrones de diseño avanzados. Implementa patrones como Builder, Observer y Factory, lo que permite centralizar la lógica de los componentes, simplificar la integración y maximizar la reutilización en proyectos que requieren un enfoque ágil y adaptable.
+**@korautils/forms** is a library designed to provide an efficient and versatile solution for creating dynamic forms with advanced design patterns. It implements patterns such as Builder, Observer, and Factory, allowing you to centralize component logic, simplify integration, and maximize reusability in projects that require an agile and adaptable approach.
 
-Con FormBuilder, puedes generar formularios complejos de manera intuitiva, mantener un código limpio y organizado, y ajustarlos rápidamente a las necesidades cambiantes de tu proyecto. La librería incluye herramientas para gestionar el estado de los componentes hijos creados con ElementBuilder, así como para configurar y aplicar validaciones de manera flexible.
+With **@korautils/forms**, you can generate complex forms intuitively, maintain clean and organized code, and quickly adapt them to your project's changing needs. The library includes tools to manage the state of child components created with ElementBuilder, as well as to configure and apply validations flexibly.
 
-Además, FormBuilder facilita la integración con APIs, permitiéndote definir configuraciones como la URL, el método HTTP y otros parámetros necesarios. Solo necesitas agregar los campos requeridos y esta herramienta se encargará de enviar los datos a la API especificada, optimizando tu flujo de desarrollo.
+Additionally, **@korautils/forms** makes it easy to integrate with APIs, allowing you to define configurations such as the URL, HTTP method, and other necessary parameters. You only need to add the required fields, and this tool will handle sending the data to the specified API, optimizing your development flow.
 
-### **Nota sobre la versión alpha**
+### **Alpha Version Notice**
 
-⚠️ **Esta librería está en fase alpha.** Actualmente se encuentra en una etapa de pruebas, lo que significa que:
+⚠️ **This library is in alpha phase.** It is currently in a testing stage, which means that:
 
-- La versión publicada **no es estable** y puede contener errores.
-- Puede experimentar **cambios significativos** en su API, funcionalidades o estructura en futuras actualizaciones.
-- Aunque puedes descargarla y probar su funcionamiento, **no se recomienda para aplicaciones en producción.**
+- The published version is **not stable** and may contain bugs.
+- There may be **significant changes** to its API, functionality, or structure in future updates.
+- While you can download and test it, it is **not recommended for production applications.**
 
-Si decides probar esta versión, agradeceremos mucho tus comentarios, sugerencias o reportes de errores en la sección de [Issues](https://github.com/korautils). ¡Tu feedback nos ayuda a mejorar!
+If you decide to try this version, we would greatly appreciate your feedback, suggestions, or bug reports in the [Issues](https://github.com/korautils/forms) section. Your feedback helps us improve!
 
 ---
 
-## Instalación
+### **About the Project**
 
-Para instalar esta versión alpha, ejecuta:
+This project is in its early stages 🚀. I have gathered some components that I commonly use in all my projects to simplify the creation of dynamic forms. As mentioned at the beginning of the README, this is **just the beginning**. I'm working on this in my free time, so **please be patient** as I continue improving the library.
+
+Constructive criticism is always welcome, and if you're interested in collaborating, **you are very welcome**. I am open to receiving all the help I can get, whether it's ideas, bug fixes, or improvements.
+
+---
+
+### **How to Contribute**
+
+If you're interested in contributing to the development of **@korautils/forms**, it would be awesome to have your help! You can contribute in the following ways:
+
+1. **Open Issues**: If you find a bug or have a suggestion, feel free to open an [issue](https://github.com/korautils/forms/issues) in the repository. Your report will help improve the library.
+2. **Make a Pull Request**: If you’ve made improvements or fixed bugs, you can create a **pull request**. Please make sure to test your changes before submitting them.
+3. **Documentation Improvements**: If you have suggestions for improving the documentation or have found areas that need clarification, your contributions in this area are very valuable.
+4. **Testing and Feedback**: Since we're in the alpha phase, your testing and feedback on the library's behavior are important to ensure its quality and stability in future versions.
+
+### **Instructions for Contributing**
+
+If you'd like to contribute to the project, follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or fix.
+3. Make your changes and make sure nothing breaks.
+4. Submit a **pull request** with a clear description of the changes.
+
+---
+
+Thanks for considering contributing to **@korautils/forms**! Your collaboration is key to making this library even better.
+
+## Installation
+
+To install this alpha version, run:
 
 ```bash
-npm install @korautils/forms
+$ npm install @korautils/forms
 ```
 
 # Implementación
-
 ```ts
 import './App.css'
 import { Fragment } from 'react/jsx-runtime'
@@ -47,16 +76,16 @@ function App() {
         }}
       >
         {
-          //Instancia un nuevo formulario...
+          // Instantiates a new form...
           FormBuilder.newForm()
-            //Configura las columnas de la grilla
+            // Sets the grid columns
             .setCols(3)
-            // Configura el endpoint para realizar solicitudes HTTP
+            // Configures the endpoint for HTTP requests
             .setApi({
               method: 'POST',
               url: 'https://localhost:8000',
             })
-            //Agrega un campo de texto para ingresar el nombre completo
+            // Adds a text field for entering the full name
             .addItem(
               ElementBuilder.newElement()
                 .textField({
@@ -68,14 +97,14 @@ function App() {
                   required: { value: true, message: 'Full name is required' },
                 })
             )
-            // Agrega un campo de texto para ingresar el nombre de usuario
+            // Adds a text field for entering the username
             .addItem(
               ElementBuilder.newElement().textField({
                 name: 'username',
                 label: 'Username',
               })
             )
-            // Agrega un campo de texto para ingresar un correo electrónico con validación de formato
+            // Adds a text field for entering an email with format validation
             .addItem(
               ElementBuilder.newElement()
                 .textField({
@@ -87,7 +116,7 @@ function App() {
                   isEmail: { value: true },
                 })
             )
-            // Agrega un selector con opciones predefinidas de forma estática
+            // Adds a select field with predefined static options
             .addItem(
               ElementBuilder.newElement().select({
                 name: 'select',
@@ -98,7 +127,7 @@ function App() {
                 ],
               })
             )
-            // Agrega un selector dinámico que obtiene sus opciones desde una API
+            // Adds a dynamic select field that fetches its options from an API
             .addItem(
               ElementBuilder.newElement().select({
                 name: 'select',
@@ -111,7 +140,7 @@ function App() {
                 renderProps: { label: '[0].title', value: '[0].id' },
               })
             )
-            //Agrega un botón
+            // Adds a button
             .addItem(
               ElementBuilder.newElement().button({
                 type: 'submit',
@@ -119,7 +148,7 @@ function App() {
                 label: 'Send',
               })
             )
-            //Agrega un componente personalizado
+            // Adds a custom component
             .addItem(
               ElementBuilder.newElement()
                 .setFullWidth()
@@ -134,8 +163,8 @@ function App() {
   )
 }
 
-// El componente personalizado recibe un formHandler opcional
-// para gestionar y sincronizar el estado global del formulario.
+// The custom component receives an optional formHandler
+// to manage and synchronize the global form state.
 const CustomComponent: React.FC<{ formHandler?: FormHandlerProps }> = ({
   formHandler = {},
 }) => {
