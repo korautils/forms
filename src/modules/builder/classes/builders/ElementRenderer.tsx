@@ -2,7 +2,6 @@ import React from 'react'
 import { Box } from '@mui/material'
 import { ElementProps } from '../../interfaces/elements/types'
 import { ELEMENT_TYPE } from '../../interfaces/elements/components'
-// import { ELEMENT_TYPE } from '@/modules/dashboard/interfaces/components'
 
 interface Props extends ElementProps {
   elementType: ELEMENT_TYPE

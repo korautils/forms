@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box } from '@mui/material'
 // import { ChildrenElement } from '@/modules/core/interfaces/general'
-import { FormHandlerProps } from '../../interfaces/elements/types'
+import { FormHandlerProps } from '../../../builder/interfaces/elements/types'
 
 interface Props {
   children?: any

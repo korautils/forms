@@ -1,4 +1,3 @@
-import React from 'react';
 import Hidden from '@mui/material/Hidden';
 import { get as getProp } from 'object-path';
 import { ContentProps, FnIsMobileProps, validateProps } from './types';
