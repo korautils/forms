@@ -10,6 +10,7 @@ import { FormHandlerProps } from '@/modules/builder/interfaces/elements/types'
 import FormRenderer from '@/modules/builder/components/common/renderers/FormPreview/FormRenderer'
 import { ApiRequestConfig } from '@/modules/builder/interfaces/general'
 import { isArrayEmpty } from '@/modules/core/utils'
+import { InputProps } from './element-props'
 
 const MIN_COL_WIDTH = 300
 
@@ -30,6 +31,7 @@ class FormBuilder {
   public ssr?: boolean = true
   public showControls?: boolean = false
   public static baseUrl?: string
+  private currentElement?: ElementBuilder
 
   constructor(initialData?: any) {
     this.initialData = initialData
@@ -105,6 +107,25 @@ class FormBuilder {
 
   getItems() {
     return this.items
+  }
+
+  newElement() {
+    if (this.currentElement) {
+      this.addItem(this.currentElement)
+    }
+
+    this.currentElement = ElementBuilder.newElement().setFormBuilder(this)
+    return this.currentElement
+  }
+
+  private endElement() {
+    if (!this.currentElement) {
+      return
+    }
+
+    this.addItem(this.currentElement)
+    this.currentElement = undefined
+    return this
   }
 
   private buildSchema() {

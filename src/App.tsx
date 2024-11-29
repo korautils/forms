@@ -23,6 +23,15 @@ function App() {
             method: 'POST',
             url: 'https://localhost:8000',
           })
+          .newElement()
+          .textField({
+            name: 'text',
+            label: 'Username',
+          })
+          .endElement()
+          .newElement()
+          .textField({ name: 'other', label: 'Other' })
+          .endElement()
           .addItem(
             ElementBuilder.newElement()
               .textField({

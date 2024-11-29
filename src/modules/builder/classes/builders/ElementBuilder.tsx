@@ -46,9 +46,12 @@ import { ELEMENT_TYPE } from '../../interfaces/elements/components'
 // import ButtonComponent from '../../../../components/shared/Button'
 import { getProp, isArrayEmpty } from '../../../core/utils'
 // import { getProp } from '../../../../utils'
-import ButtonComponent, { ButtonProps } from '../../../core/components/shared/Button/ButtonComponent'
+import ButtonComponent, {
+  ButtonProps,
+} from '../../../core/components/shared/Button/ButtonComponent'
 import Select from '../../../core/components/shared/Select'
 import Stepper from '../../components/shared/Stepper'
+import FormBuilder from './FormBuilder'
 
 type KeyProp = keyof ElementProps
 type VISIBILITY = 'VISIBLE' | 'GONE' | 'INVISIBLE'
@@ -66,6 +69,7 @@ class ElementBuilder {
   private props: ElementProps
   private rules: Array<Array<ElementRule>> = []
   public yupRules: Array<YupSchema | undefined> = [] //Validations
+  protected formBuilderInstance?: FormBuilder
 
   constructor(props: ElementProps = {}) {
     this.id = uuidv4()
@@ -73,13 +77,26 @@ class ElementBuilder {
     this.props = this.getBasicProps(props)
   }
 
-  static newElement(props: ElementProps = {}) {
-    return new ElementBuilder(props)
+  static newElement() {
+    return new ElementBuilder()
   }
 
   withControl() {
     this._withControl = true
     return this
+  }
+
+  setFormBuilder(formBuilder: FormBuilder) {
+    this.formBuilderInstance = formBuilder
+    return this
+  }
+
+  newElement() {
+    return this.formBuilderInstance!.newElement()
+  }
+
+  endElement() {
+    return this.formBuilderInstance!
   }
 
   hasControl() {
