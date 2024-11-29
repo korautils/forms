@@ -2,8 +2,7 @@ import React from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import { SxProps, Theme } from '@mui/material'
 import { YupRule, YupSchema } from './yup-builder/types'
-import GroupButtonRenderer from '../../components/shared/GroupButtonRenderer'
-import TabsRenderer from '../../components/shared/TabsRenderer'
+import GroupButtonRenderer from '../../../core/components/shared/GroupButtonRenderer'
 import YupBuilder from './yup-builder'
 
 import {
@@ -35,7 +34,7 @@ import {
   TabsProps,
 } from './element-props'
 import ElementRenderer from './ElementRenderer'
-import BoxElement from '../../components/shared/BoxElement'
+import BoxElement from '../../../core/components/shared/BoxElement'
 import {
   BuildProps,
   ElementProps,
@@ -47,10 +46,11 @@ import { ELEMENT_TYPE } from '../../interfaces/elements/components'
 import { getProp, isArrayEmpty } from '../../../core/utils'
 // import { getProp } from '../../../../utils'
 import Select from '../../../core/components/shared/Select'
-import Stepper from '../../components/shared/Stepper'
 import FormBuilder from './FormBuilder'
-import ButtonComponent from '../../components/shared/Button'
-import { ButtonProps } from '../../components/shared/Button/ButtonComponent'
+import TabsRenderer from '@/modules/core/components/shared/TabsRenderer'
+import Stepper from '@/modules/core/components/shared/Stepper'
+import ButtonComponent from '@/modules/core/components/shared/Button'
+import { ButtonProps } from '@/modules/core/components/shared/Button/ButtonComponent'
 
 type KeyProp = keyof ElementProps
 type VISIBILITY = 'VISIBLE' | 'GONE' | 'INVISIBLE'

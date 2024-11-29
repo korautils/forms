@@ -3,14 +3,13 @@
  * correctamente y se conecten con el estado.
  */
 
-import ElementBuilder from '@/modules/builder/classes/builders/ElementBuilder'
-import FormPreview from '@/modules/builder/components/common/renderers/FormPreview'
 import YupBuilder from '@/modules/builder/classes/builders/yup-builder'
 import { FormHandlerProps } from '@/modules/builder/interfaces/elements/types'
-import FormRenderer from '@/modules/builder/components/common/renderers/FormPreview/FormRenderer'
 import { ApiRequestConfig } from '@/modules/builder/interfaces/general'
 import { isArrayEmpty } from '@/modules/core/utils'
-import { InputProps } from './element-props'
+import ElementBuilder from './ElementBuilder'
+import FormRenderer from '@/modules/core/components/common/renderers/FormPreview/FormRenderer'
+import FormPreview from '@/modules/core/components/common/renderers/FormPreview'
 
 const MIN_COL_WIDTH = 300
 

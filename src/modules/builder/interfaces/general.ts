@@ -2,9 +2,10 @@ import { ReactNode } from 'react'
 import { AxiosError, AxiosResponse } from 'axios'
 import { FormHandlerProps } from '@/modules/builder/interfaces/elements/types'
 import { CallbackType } from '@/modules/core/components/shared/Types/types'
-import { FORMAT_TYPES } from '../components/common/ApiRequestConfigModal/BodyForm/options'
 
 export type GQLQueryName = 'user' | 'users' | 'file' | 'products' | 'links'
+
+export type FORMAT_TYPES = 'FORM_DATA' | 'JSON' | 'PLAIN_TEXT' | 'NO_BODY'
 
 export type GQLResult<T extends GQLQueryName, U> = {
   [key in T]: U

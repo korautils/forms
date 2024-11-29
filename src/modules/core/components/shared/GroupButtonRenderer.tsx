@@ -1,5 +1,5 @@
 import { ButtonGroup } from '@mui/material'
-import { ItemOptionProps } from '../../interfaces/elements/components'
+import { ItemOptionProps } from '../../../builder/interfaces/elements/components'
 import { isArrayEmpty } from '@/modules/core/utils'
 import ButtonComponent from './Button'
 
