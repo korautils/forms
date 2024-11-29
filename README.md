@@ -14,7 +14,7 @@ Additionally, **@korautils/forms** makes it easy to integrate with APIs, allowin
 - There may be **significant changes** to its API, functionality, or structure in future updates.
 - While you can download and test it, it is **not recommended for production applications.**
 
-If you decide to try this version, we would greatly appreciate your feedback, suggestions, or bug reports in the [Issues](https://github.com/korautils/forms) section. Your feedback helps us improve!
+If you decide to try this version, we would greatly appreciate your feedback, suggestions, or bug reports in the [Issues](https://github.com/korautils/forms/issues) section. Your feedback helps us improve!
 
 ---
 

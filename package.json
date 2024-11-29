@@ -1,7 +1,7 @@
 {
   "name": "@korautils/forms",
   "private": false,
-  "version": "0.0.2-alpha.6.4",
+  "version": "0.0.2-alpha.6.5",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -59,8 +59,8 @@
     "FormBuilder",
     "ElementBuilder"
   ],
-  "homepage": "https://github.com/johnjaider1000",
+  "homepage": "https://github.com/korautils/forms",
   "github": {
-    "url": "https://github.com/johjaider1000"
+    "url": "https://github.com/korautils/forms"
   }
 }
