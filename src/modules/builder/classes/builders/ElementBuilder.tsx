@@ -1,6 +1,6 @@
 import React from 'react'
 import { v4 as uuidv4 } from 'uuid'
-import { SxProps, Theme } from '@mui/material'
+import { ButtonProps, SxProps, Theme } from '@mui/material'
 import { YupRule, YupSchema } from './yup-builder/types'
 import GroupButtonRenderer from '../../components/shared/GroupButtonRenderer'
 import TabsRenderer from '../../components/shared/TabsRenderer'
@@ -46,12 +46,10 @@ import { ELEMENT_TYPE } from '../../interfaces/elements/components'
 // import ButtonComponent from '../../../../components/shared/Button'
 import { getProp, isArrayEmpty } from '../../../core/utils'
 // import { getProp } from '../../../../utils'
-import ButtonComponent, {
-  ButtonProps,
-} from '../../../core/components/shared/Button/ButtonComponent'
 import Select from '../../../core/components/shared/Select'
 import Stepper from '../../components/shared/Stepper'
 import FormBuilder from './FormBuilder'
+import ButtonComponent from '../../components/shared/Button'
 
 type KeyProp = keyof ElementProps
 type VISIBILITY = 'VISIBLE' | 'GONE' | 'INVISIBLE'

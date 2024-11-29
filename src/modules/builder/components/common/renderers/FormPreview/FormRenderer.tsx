@@ -13,9 +13,9 @@ import {
   FormHandlerProps,
 } from '@/modules/builder/interfaces/elements/types'
 import { Box, ButtonGroup, Divider, Skeleton } from '@mui/material'
-import ButtonComponent from '@/modules/core/components/shared/Button'
 import SaveIcon from '@mui/icons-material/Save'
 import CleaningServicesIcon from '@mui/icons-material/CleaningServices'
+import ButtonComponent from '../../../shared/Button'
 
 interface Props {
   form: FormBuilder

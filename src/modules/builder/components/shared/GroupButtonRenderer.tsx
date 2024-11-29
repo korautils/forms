@@ -1,7 +1,7 @@
-import ButtonComponent from '@/modules/core/components/shared/Button'
 import { ButtonGroup } from '@mui/material'
 import { ItemOptionProps } from '../../interfaces/elements/components'
 import { isArrayEmpty } from '@/modules/core/utils'
+import ButtonComponent from './Button'
 
 interface Props {
   options?: Array<ItemOptionProps>
