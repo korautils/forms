@@ -1,6 +1,6 @@
 import React from 'react'
 import { v4 as uuidv4 } from 'uuid'
-import { ButtonProps, SxProps, Theme } from '@mui/material'
+import { SxProps, Theme } from '@mui/material'
 import { YupRule, YupSchema } from './yup-builder/types'
 import GroupButtonRenderer from '../../components/shared/GroupButtonRenderer'
 import TabsRenderer from '../../components/shared/TabsRenderer'
@@ -50,6 +50,7 @@ import Select from '../../../core/components/shared/Select'
 import Stepper from '../../components/shared/Stepper'
 import FormBuilder from './FormBuilder'
 import ButtonComponent from '../../components/shared/Button'
+import { ButtonProps } from '../../components/shared/Button/ButtonComponent'
 
 type KeyProp = keyof ElementProps
 type VISIBILITY = 'VISIBLE' | 'GONE' | 'INVISIBLE'
@@ -87,14 +88,6 @@ class ElementBuilder {
   setFormBuilder(formBuilder: FormBuilder) {
     this.formBuilderInstance = formBuilder
     return this
-  }
-
-  newElement() {
-    return this.formBuilderInstance!.newElement()
-  }
-
-  endElement() {
-    return this.formBuilderInstance!
   }
 
   hasControl() {
