@@ -1,10 +1,10 @@
 import { Suspense, useState } from 'react'
 import classNames from 'classnames'
 import FormBuilder from '@/modules/builder/classes/builders/FormBuilder'
-import EmptyController from '../../ElementBuilderRenderer/EmptyController'
+import EmptyController from '@/modules/core/components/common/ElementBuilderRenderer/EmptyController'
 import RuleManager from '@/modules/builder/classes/managers/RuleManager'
-import { FormPreviewWrapper, Grid } from './styles'
-// import { Grid } from '../../ModulesCreator/styles'
+import { FormPreviewWrapper, Grid } from '@/modules/core/components/common/renderers/FormPreview/styles'
+// import { Grid } from '@/modules/core/components/common/ModulesCreator/styles'
 import { Controller } from 'react-hook-form'
 import { getProp, isArrayEmpty } from '@/modules/core/utils'
 
@@ -15,7 +15,7 @@ import {
 import { Box, ButtonGroup, Divider, Skeleton } from '@mui/material'
 import SaveIcon from '@mui/icons-material/Save'
 import CleaningServicesIcon from '@mui/icons-material/CleaningServices'
-import ButtonComponent from '../../../shared/Button'
+import ButtonComponent from '@/modules/core/components/shared/Button'
 
 interface Props {
   form: FormBuilder

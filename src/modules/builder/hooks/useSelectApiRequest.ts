@@ -1,11 +1,11 @@
-import { OptionSelect, RenderProps } from '../interfaces/elements/types'
-import useApiRequest from './useApiRequest'
+import { OptionSelect, RenderProps } from '@/modules/builder/interfaces/elements/types'
+import useApiRequest from '@/modules/builder/hooks/useApiRequest'
 import { useCallback, useEffect } from 'react'
 import { getProp, isArrayEmpty } from '@/modules/core/utils'
-import { getValueFromPath } from '../utils'
-import { getDataFromPath } from '../utils/index'
-import { ApiRequestConfig } from '../interfaces/general'
-import { Option } from '../interfaces/elements/components'
+import { getValueFromPath } from '@/modules/builder/utils'
+import { getDataFromPath } from '@/modules/builder/utils/index'
+import { ApiRequestConfig } from '@/modules/builder/interfaces/general'
+import { Option } from '@/modules/builder/interfaces/elements/components'
 
 interface Props {
   renderProps?: RenderProps

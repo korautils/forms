@@ -1,4 +1,4 @@
-import './App.css'
+import '@/App.css'
 import React from 'react'
 import { Box, Divider } from '@mui/material'
 import { Fragment } from 'react/jsx-runtime'

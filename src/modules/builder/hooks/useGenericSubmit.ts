@@ -1,12 +1,12 @@
 import useValidate from '@/modules/builder/hooks/useValidate'
-import FormBuilder from '../classes/builders/FormBuilder'
-import useApiRequest from './useApiRequest'
+import FormBuilder from '@/modules/builder/classes/builders/FormBuilder'
+import useApiRequest from '@/modules/builder/hooks/useApiRequest'
 import {
   generateQueryParams,
   replacePlaceholders,
   replacePlaceholdersInObject,
 } from '@/modules/builder/utils/fetch-utils'
-import { ApiRequestConfig } from '../interfaces/general'
+import { ApiRequestConfig } from '@/modules/builder/interfaces/general'
 
 interface Props {
   form: FormBuilder

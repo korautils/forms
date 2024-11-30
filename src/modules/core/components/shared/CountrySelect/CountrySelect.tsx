@@ -2,7 +2,7 @@ import * as React from 'react'
 import Box from '@mui/material/Box'
 import TextField from '@mui/material/TextField'
 import Autocomplete, { createFilterOptions } from '@mui/material/Autocomplete'
-import { CountryType, countries, getOrderedCountries } from './countriesList'
+import { CountryType, countries, getOrderedCountries } from '@/modules/core/components/shared/CountrySelect/countriesList'
 import { countryToFlag } from '@/modules/core/utils'
 
 interface Props {

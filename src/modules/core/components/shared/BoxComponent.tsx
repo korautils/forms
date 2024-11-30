@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box } from '@mui/material'
-import { BoxProps } from '../../../builder/classes/builders/element-props'
+import { BoxProps } from '@/modules/builder/classes/builders/element-props'
 
 interface Props extends BoxProps {
   formHandler?: any // Define como opcional si es necesario

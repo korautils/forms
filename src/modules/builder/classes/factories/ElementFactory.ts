@@ -1,9 +1,9 @@
 // import { ELEMENT_TYPE } from '@/modules/dashboard/interfaces/components'
-import ComponentBuilder from '../builders/ElementBuilder'
-import { ElementProps, OriginElement } from '../../interfaces/elements/types'
-import ElementBuilder from '../builders/ElementBuilder'
-import { YupRule } from '../builders/yup-builder/types'
-import { ELEMENT_TYPE } from '../../interfaces/elements/components'
+import ComponentBuilder from '@/modules/builder/classes/builders/ElementBuilder'
+import { ElementProps, OriginElement } from '@/modules/builder/interfaces/elements/types'
+import ElementBuilder from '@/modules/builder/classes/builders/ElementBuilder'
+import { YupRule } from '@/modules/builder/classes/builders/yup-builder/types'
+import { ELEMENT_TYPE } from '@/modules/builder/interfaces/elements/components'
 
 class ElementFactory {
   static renderElement(

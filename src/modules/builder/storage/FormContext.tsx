@@ -1,5 +1,5 @@
 import { createContext, useState } from 'react'
-import { ContextProps } from '../../core/interfaces/context'
+import { ContextProps } from '@/modules/core/interfaces/context'
 
 interface Forms {
   [key: string]: any

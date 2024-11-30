@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Props as AutocompleteProps } from "../Autocomplete";
+import { Props as AutocompleteProps } from "@/modules/core/components/shared/Forms/Autocomplete";
 import Checkbox from "@mui/material/Checkbox";
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";

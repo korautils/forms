@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react'
-import { Props, CustomProps } from './types'
+import { Props, CustomProps } from '@/modules/core/components/shared/Forms/Input/types'
 import { NumericFormat } from 'react-number-format'
 import { TextField } from '@mui/material'
 

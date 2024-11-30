@@ -1,6 +1,6 @@
 import React from 'react'
 import { uuidv4 } from '@/modules/core/utils'
-import { AutocompleteFieldWrapper } from './styles'
+import { AutocompleteFieldWrapper } from '@/modules/core/components/shared/AutocompleteField/styles'
 import TextField from '@mui/material/TextField'
 import Autocomplete from '@mui/material/Autocomplete'
 

@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Typography from '@mui/material/Typography'
-import { Accordion, AccordionDetails, AccordionSummary } from './styles'
+import { Accordion, AccordionDetails, AccordionSummary } from '@/modules/core/components/shared/Accordion/styles'
 import classNames from 'classnames'
 import { FormHandlerProps } from '@/modules/builder/interfaces/elements/types'
 import { isArrayEmpty, uuidv4 } from '@/modules/core/utils'

@@ -1,4 +1,4 @@
-import { TableBasicProps, TheadItem } from './types'
+import { TableBasicProps, TheadItem } from '@/modules/core/components/shared/BasicTable/types'
 import { useState } from 'react'
 import { isArrayEmpty } from '@/modules/core/utils'
 import Swal from 'sweetalert2'

@@ -1,4 +1,4 @@
-import { BASIC_TABLE_ELEMENTS, basicElements } from './basic-table-elements'
+import { BASIC_TABLE_ELEMENTS, basicElements } from '@/modules/core/components/shared/BasicTable/BasicTableElement/basic-table-elements'
 
 interface Props {
   type: BASIC_TABLE_ELEMENTS

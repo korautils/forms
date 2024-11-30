@@ -1,5 +1,5 @@
 import React from "react";
-import Autocomplete from "../Autocomplete";
+import Autocomplete from "@/modules/core/components/shared/Forms/Autocomplete";
 
 interface Props {
   name?: string;

@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import { PInfoWrapper } from './styles'
+import { PInfoWrapper } from '@/modules/core/components/common/PInfo/styles'
 import InfoIcon from '@mui/icons-material/Info'
 // import { ChildrenElement } from '@/modules/core/interfaces/general'
 

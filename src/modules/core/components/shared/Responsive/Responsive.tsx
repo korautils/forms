@@ -1,6 +1,6 @@
 import Hidden from '@mui/material/Hidden';
 import { get as getProp } from 'object-path';
-import { ContentProps, FnIsMobileProps, validateProps } from './types';
+import { ContentProps, FnIsMobileProps, validateProps } from '@/modules/core/components/shared/Responsive/types';
 
 export const validate = ({ minWidth, maxWidth, isMobile }: validateProps) => {
   if (isMobile !== null) {

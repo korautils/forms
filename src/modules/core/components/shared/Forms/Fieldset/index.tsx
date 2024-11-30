@@ -1,5 +1,5 @@
 import React, { FieldsetHTMLAttributes } from 'react'
-import { FieldsetWrapper } from './styles'
+import { FieldsetWrapper } from '@/modules/core/components/shared/Forms/Fieldset/styles'
 import classNames from 'classnames'
 
 interface Props extends FieldsetHTMLAttributes<HTMLFieldSetElement> {

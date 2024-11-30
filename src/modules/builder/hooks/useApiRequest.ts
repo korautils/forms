@@ -2,7 +2,7 @@ import { URL_REGEX } from '@/modules/core/constants/regex'
 import { getProp } from '@/modules/core/utils'
 import axios, { AxiosError } from 'axios'
 import { useState, useCallback } from 'react'
-import { ApiRequestConfig } from '../interfaces/general'
+import { ApiRequestConfig } from '@/modules/builder/interfaces/general'
 import { AxiosConfig } from '@/modules/config/axios'
 
 type TYPE = 'single' | 'multiple'

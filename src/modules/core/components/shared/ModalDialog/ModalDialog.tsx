@@ -8,7 +8,7 @@ import DialogActions from '@mui/material/DialogActions'
 import IconButton from '@mui/material/IconButton'
 import CloseIcon from '@mui/icons-material/Close'
 // import { any } from '@/modules/core/interfaces/general'
-import ButtonComponent from '../Button'
+import ButtonComponent from '@/modules/core/components/shared/Button'
 
 const BootstrapDialog:any  = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {

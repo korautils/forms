@@ -1,5 +1,5 @@
 import { getProp, isArrayEmpty } from '@/modules/core/utils'
-import { ElementRule } from '../../interfaces/elements/types'
+import { ElementRule } from '@/modules/builder/interfaces/elements/types'
 
 interface RuleReturnProps {
   visible: boolean

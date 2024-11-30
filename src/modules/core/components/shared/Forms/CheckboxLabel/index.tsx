@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react'
 import Checkbox from '@mui/material/Checkbox'
-import { CheckboxWrapper } from './styles'
+import { CheckboxWrapper } from '@/modules/core/components/shared/Forms/CheckboxLabel/styles'
 import { FormHelperText, Typography } from '@mui/material'
 import classNames from 'classnames'
 

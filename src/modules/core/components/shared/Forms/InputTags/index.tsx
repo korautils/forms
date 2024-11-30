@@ -1,4 +1,4 @@
-import { Props as AutocompleteProps } from "../Autocomplete";
+import { Props as AutocompleteProps } from "@/modules/core/components/shared/Forms/Autocomplete";
 import Autocomplete from "@mui/material/Autocomplete";
 import TextField from "@mui/material/TextField";
 
