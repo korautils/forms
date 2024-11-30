@@ -1,5 +1,5 @@
-import { AvailableKeyProps } from '../../interfaces/elements/types'
-import { defaultProps, optionsProps } from './defaults-config-props'
+import { AvailableKeyProps } from '@/modules/builder/interfaces/elements/types'
+import { defaultProps, optionsProps } from '@/modules/builder/constants/elements/defaults-config-props'
 
 export const AVAILABLE_PROPS: AvailableKeyProps = {
   INPUT: [

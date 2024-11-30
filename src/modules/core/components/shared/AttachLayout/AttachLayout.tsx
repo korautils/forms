@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import { CallbackType } from '../Types/types'
+import { CallbackType } from '@/modules/core/components/shared/Types/types'
 import { ChildrenCallbackAttach } from '@/modules/builder/interfaces/general'
 
 interface Props {

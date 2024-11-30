@@ -1,10 +1,10 @@
 import { Box } from '@mui/material'
 import FormBuilder from '@/modules/builder/classes/builders/FormBuilder'
 import useGenericSubmit from '@/modules/builder/hooks/useGenericSubmit'
-import FormRenderer from './FormRenderer'
+import FormRenderer from '@/modules/core/components/common/renderers/FormPreview/FormRenderer'
 import { useEffect } from 'react'
 import { FieldsetWrapper } from '@/modules/core/components/shared/Forms/Fieldset/styles'
-import AlertResponse from './AlertResponse'
+import AlertResponse from '@/modules/core/components/common/renderers/FormPreview/AlertResponse'
 import { FormHandlerProps } from '@/modules/builder/interfaces/elements/types'
 
 interface Props {

@@ -1,6 +1,6 @@
-import { OptionSelect } from '../interfaces/elements/types'
+import { OptionSelect } from '@/modules/builder/interfaces/elements/types'
 import { getProp, isArrayEmpty, uuidv4 } from '@/modules/core/utils'
-import { TableItem } from '../interfaces/general'
+import { TableItem } from '@/modules/builder/interfaces/general'
 
 export const arrayToOptions = (array: Array<string>) => {
   if (isArrayEmpty(array)) {

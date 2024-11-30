@@ -1,5 +1,5 @@
-import { ChildrenElement } from "../general"
-import { ElementProps } from "./types"
+import { ChildrenElement } from '@/modules/builder/interfaces/general'
+import { ElementProps } from '@/modules/builder/interfaces/elements/types'
 
 export type ELEMENT_TYPE =
   | 'INPUT'

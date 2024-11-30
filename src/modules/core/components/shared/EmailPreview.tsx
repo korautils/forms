@@ -1,5 +1,5 @@
 import { TextField } from '@mui/material'
-import { NormalProps } from './types'
+import { NormalProps } from '@/modules/core/components/shared/types'
 
 interface Props extends NormalProps {}
 

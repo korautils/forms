@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 import { AxiosError, AxiosResponse } from 'axios'
-import { FormHandlerProps } from '@/modules/builder/interfaces/elements/types'
 import { CallbackType } from '@/modules/core/components/shared/Types/types'
+import { FormHandlerProps } from '@/modules/builder/interfaces/elements/types'
 
 export type GQLQueryName = 'user' | 'users' | 'file' | 'products' | 'links'
 

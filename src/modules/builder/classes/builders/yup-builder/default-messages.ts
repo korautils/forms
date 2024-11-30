@@ -1,4 +1,4 @@
-import { MessageDetail } from './types'
+import { MessageDetail } from '@/modules/builder/classes/builders/yup-builder/types'
 
 export const getMessage = ({ type, defaultMessage, value }: MessageDetail) => {
   if (defaultMessage) {

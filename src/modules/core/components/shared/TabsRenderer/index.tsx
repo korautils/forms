@@ -1,3 +1,3 @@
-import TabsRenderer from './TabsRenderer'
+import TabsRenderer from '@/modules/core/components/shared/TabsRenderer/TabsRenderer'
 
 export default TabsRenderer

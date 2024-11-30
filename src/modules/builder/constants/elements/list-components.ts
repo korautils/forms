@@ -1,5 +1,5 @@
 import dayjs from 'dayjs'
-import { KoraComponentProps } from '../../interfaces/elements/components'
+import { KoraComponentProps } from '@/modules/builder/interfaces/elements/components'
 
 export interface ItemComponentProps extends KoraComponentProps {
   details?: {

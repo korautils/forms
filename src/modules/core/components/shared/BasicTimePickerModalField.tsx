@@ -2,7 +2,7 @@ import * as React from 'react'
 import dayjs from 'dayjs'
 import { DemoContainer, DemoItem } from '@mui/x-date-pickers/internals/demo'
 import { MobileTimePicker } from '@mui/x-date-pickers/MobileTimePicker'
-import { DateProps } from './types'
+import { DateProps } from '@/modules/core/components/shared/types'
 import { IconButton, InputAdornment } from '@mui/material'
 import InsertInvitationIcon from '@mui/icons-material/InsertInvitation'
 

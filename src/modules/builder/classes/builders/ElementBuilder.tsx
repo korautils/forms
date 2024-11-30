@@ -1,9 +1,12 @@
 import React from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import { SxProps, Theme } from '@mui/material'
-import { YupRule, YupSchema } from './yup-builder/types'
-import GroupButtonRenderer from '../../../core/components/shared/GroupButtonRenderer'
-import YupBuilder from './yup-builder'
+import {
+  YupRule,
+  YupSchema,
+} from '@/modules/builder/classes/builders/yup-builder/types'
+import GroupButtonRenderer from '@/modules/core/components/shared/GroupButtonRenderer'
+import YupBuilder from '@/modules/builder/classes/builders/yup-builder'
 
 import {
   Autocomplete,
@@ -33,20 +36,20 @@ import {
   SelectProps,
   TabsProps,
 } from './element-props'
-import ElementRenderer from './ElementRenderer'
-import BoxElement from '../../../core/components/shared/BoxElement'
+import ElementRenderer from '@/modules/builder/classes/builders/ElementRenderer'
+import BoxElement from '@/modules/core/components/shared/BoxElement'
 import {
   BuildProps,
   ElementProps,
   ElementRule,
   OriginElement,
 } from '../../interfaces/elements/types'
-import { ELEMENT_TYPE } from '../../interfaces/elements/components'
-// import ButtonComponent from '../../../../components/shared/Button'
-import { getProp, isArrayEmpty } from '../../../core/utils'
-// import { getProp } from '../../../../utils'
-import Select from '../../../core/components/shared/Select'
-import FormBuilder from './FormBuilder'
+import { ELEMENT_TYPE } from '@/modules/builder/interfaces/elements/components'
+// import ButtonComponent from '@/components/shared/Button'
+import { getProp, isArrayEmpty } from '@/modules/core/utils'
+// import { getProp } from '@/utils'
+import Select from '@/modules/core/components/shared/Select'
+import FormBuilder from '@/modules/builder/classes/builders/FormBuilder'
 import TabsRenderer from '@/modules/core/components/shared/TabsRenderer'
 import Stepper from '@/modules/core/components/shared/Stepper'
 import ButtonComponent from '@/modules/core/components/shared/Button'

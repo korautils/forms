@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Tabs from '@mui/material/Tabs'
-import { TabCustom, TabsRendererWrapper } from './styles'
+import { TabCustom, TabsRendererWrapper } from '@/modules/core/components/shared/TabsRenderer/styles'
 import { Box } from '@mui/material'
 import { FormHandlerProps } from '@/modules/builder/interfaces/elements/types'
 import { isArrayEmpty, uuidv4 } from '@/modules/core/utils'

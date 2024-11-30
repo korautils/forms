@@ -1,7 +1,7 @@
 import React from 'react'
-import GroupButtonRenderer from '../../core/components/shared/GroupButtonRenderer'
+import GroupButtonRenderer from '@/modules/core/components/shared/GroupButtonRenderer'
 import { Box } from '@mui/material'
-import { ELEMENT_TYPE } from '../interfaces/elements/components'
+import { ELEMENT_TYPE } from '@/modules/builder/interfaces/elements/components'
 import TabsRenderer from '@/modules/core/components/shared/TabsRenderer'
 import { ElementItem } from '@/modules/core/components/common/ElementBuilderRenderer/types'
 // import es from 'dayjs/locale/es' // Importa el locale español de dayjs

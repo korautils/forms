@@ -2,7 +2,7 @@ import * as React from 'react'
 import dayjs from 'dayjs'
 import { TimePicker } from '@mui/x-date-pickers/TimePicker'
 import { DemoContainer, DemoItem } from '@mui/x-date-pickers/internals/demo'
-import { DateProps } from './types'
+import { DateProps } from '@/modules/core/components/shared/types'
 
 export default function ResponsiveTimePickers({
   label,

@@ -1,5 +1,5 @@
-import { SIZES, VARIANT } from "../../Types/types";
-import { GenericProps } from "../../Types/Core";
+import { SIZES, VARIANT } from "@/modules/core/components/shared/Types/types";
+import { GenericProps } from "@/modules/core/components/shared/Types/Core";
 
 export interface Callback {
   (event: any): void;

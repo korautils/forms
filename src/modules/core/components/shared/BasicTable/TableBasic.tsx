@@ -1,13 +1,13 @@
 import classNames from 'classnames'
-import { BasicTable, BasicTableWrapper } from './styles'
+import { BasicTable, BasicTableWrapper } from '@/modules/core/components/shared/BasicTable/styles'
 import React, { Fragment } from 'react'
 import BuildIcon from '@mui/icons-material/Build'
 import { ButtonBase } from '@mui/material'
-import { getProp, isArrayEmpty } from '../../../utils/index'
-import { TableBasicProps } from './types'
-import useBasicTable from './useBasicTable'
+import { getProp, isArrayEmpty } from '@/modules/core/utils/index'
+import { TableBasicProps } from '@/modules/core/components/shared/BasicTable/types'
+import useBasicTable from '@/modules/core/components/shared/BasicTable/useBasicTable'
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever'
-import BasicTableElement from './BasicTableElement/BasicTableElement'
+import BasicTableElement from '@/modules/core/components/shared/BasicTable/BasicTableElement/BasicTableElement'
 import WarningIcon from '@mui/icons-material/Warning'
 
 const TableBasic: React.FC<TableBasicProps> = React.forwardRef(function Element(

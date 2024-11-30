@@ -1,4 +1,4 @@
-import { LOCAL_STORAGE_KEYS_TO_KEEP } from '../constants/localStorageConstants'
+import { LOCAL_STORAGE_KEYS_TO_KEEP } from '@/modules/core/constants/localStorageConstants'
 
 interface GetLocalProps {
   key: string

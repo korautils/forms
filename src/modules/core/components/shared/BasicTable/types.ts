@@ -1,5 +1,5 @@
 import { ChildrenElement } from '@/modules/builder/interfaces/general'
-import { BASIC_TABLE_ELEMENTS } from './BasicTableElement/basic-table-elements'
+import { BASIC_TABLE_ELEMENTS } from '@/modules/core/components/shared/BasicTable/BasicTableElement/basic-table-elements'
 
 export interface TheadItem {
   label?: ChildrenElement

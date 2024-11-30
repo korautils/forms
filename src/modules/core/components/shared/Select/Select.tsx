@@ -1,4 +1,4 @@
-import { SelectWrapper } from './styles'
+import { SelectWrapper } from '@/modules/core/components/shared/Select/styles'
 import MuiSelect, { SelectChangeEvent } from '@mui/material/Select'
 import { uuidv4 } from '@/modules/core/utils'
 

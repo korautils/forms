@@ -1,4 +1,4 @@
-import { AvailableProp } from '../../interfaces/elements/types'
+import { AvailableProp } from '@/modules/builder/interfaces/elements/types'
 
 export const defaultProps: Array<AvailableProp> = [
   {

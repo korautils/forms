@@ -3,11 +3,11 @@
  * correctamente y se conecten con el estado.
  */
 
+import { isArrayEmpty } from '@/modules/core/utils'
 import YupBuilder from '@/modules/builder/classes/builders/yup-builder'
 import { FormHandlerProps } from '@/modules/builder/interfaces/elements/types'
 import { ApiRequestConfig } from '@/modules/builder/interfaces/general'
-import { isArrayEmpty } from '@/modules/core/utils'
-import ElementBuilder from './ElementBuilder'
+import ElementBuilder from '@/modules/builder/classes/builders/ElementBuilder'
 import FormRenderer from '@/modules/core/components/common/renderers/FormPreview/FormRenderer'
 import FormPreview from '@/modules/core/components/common/renderers/FormPreview'
 

@@ -11,6 +11,8 @@ tsconfig.json
 tsconfig.node.json
 tsup.config.tsconfig
 vite.config.json
+tsup.config.ts
+vite.config.ts
 HELPER.md
 pnpm-lock.yaml
 .nvmrc
