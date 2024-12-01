@@ -20,4 +20,9 @@ export const ButtonWrapper: any = styled(Button)`
   &.button-large {
     padding: 15px 24px;
   }
+
+  &.button-medium {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
 `

@@ -1,16 +1,29 @@
 import { styled } from '@mui/material'
 
-export const FormPreviewWrapper:any  = styled('div')`
+export const FormPreviewWrapper: any = styled('div')`
   display: block;
   width: 100%;
 `
 
-export const Grid:any  = styled('div')`
+export const Grid: any = styled('div')`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
   width: 100%;
   gap: 20px;
   justify-items: start;
+
+  .skeleton {
+    background-color: red;
+    &.small {
+      height: 40px;
+    }
+    &.medium {
+      height: 40px;
+    }
+    &.large {
+      height: 56px;
+    }
+  }
 
   .drag-over {
     position: relative;

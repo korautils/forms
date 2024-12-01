@@ -3,7 +3,10 @@ import classNames from 'classnames'
 import FormBuilder from '@/modules/builder/classes/builders/FormBuilder'
 import EmptyController from '@/modules/core/components/common/ElementBuilderRenderer/EmptyController'
 import RuleManager from '@/modules/builder/classes/managers/RuleManager'
-import { FormPreviewWrapper, Grid } from '@/modules/core/components/common/renderers/FormPreview/styles'
+import {
+  FormPreviewWrapper,
+  Grid,
+} from '@/modules/core/components/common/renderers/FormPreview/styles'
 // import { Grid } from '@/modules/core/components/common/ModulesCreator/styles'
 import { Controller } from 'react-hook-form'
 import { getProp, isArrayEmpty } from '@/modules/core/utils'
@@ -91,7 +94,9 @@ const FormRenderer: React.FC<Props> = ({ formHandler = {}, form }) => {
                             <Skeleton
                               variant='rounded'
                               width={'100%'}
-                              height={40}
+                              className={classNames(
+                                `skeleton ${element.getProp('size')}`
+                              )}
                               sx={{ marginTop: '7px' }}
                             />
                           )}
