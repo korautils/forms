@@ -38,6 +38,7 @@ function App() {
                 .textField({
                   name: 'fullname',
                   label: 'Full name',
+                  size: 'medium',
                 })
                 .addValidation({
                   type: 'string',
@@ -49,6 +50,7 @@ function App() {
               ElementBuilder.newElement().textField({
                 name: 'username',
                 label: 'Username',
+                size: 'medium',
               })
             )
             // Agrega un campo de texto para ingresar un correo electrónico con validación de formato
@@ -57,6 +59,7 @@ function App() {
                 .textField({
                   name: 'email',
                   label: 'Email',
+                  size: 'medium',
                 })
                 .addValidation({
                   type: 'string',
@@ -68,6 +71,7 @@ function App() {
               ElementBuilder.newElement().select({
                 name: 'select',
                 label: 'Static options',
+                size: 'medium',
                 options: [
                   { label: 'Static Option 1', value: 'option1' },
                   { label: 'Static Option 2', value: 'option2' },
@@ -79,6 +83,7 @@ function App() {
               ElementBuilder.newElement().select({
                 name: 'select',
                 label: 'Dynamic options',
+                size: 'medium',
                 api: {
                   method: 'GET',
                   url: 'https://jsonplaceholder.typicode.com/todos/',
@@ -92,6 +97,7 @@ function App() {
               ElementBuilder.newElement().button({
                 type: 'submit',
                 name: 'button',
+                size: 'large',
                 label: 'Send',
               })
             )

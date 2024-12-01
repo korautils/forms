@@ -201,6 +201,7 @@ export const ValidElementProps: ValidProps = {
     'unshadow',
     'children',
     'color',
+    'size',
     'onClick'
   ),
   PRICE: getPropsArray<keyof PriceProps>('placeholder', ...commonProps),

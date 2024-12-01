@@ -1,7 +1,7 @@
 import { styled } from '@mui/material'
 import Button from '@mui/material/Button'
 
-export const ButtonWrapper:any  = styled(Button)`
+export const ButtonWrapper: any = styled(Button)`
   text-transform: none;
 
   &.unshadow {
@@ -15,5 +15,9 @@ export const ButtonWrapper:any  = styled(Button)`
 
   &.circular {
     border-radius: 30px;
+  }
+
+  &.button-large {
+    padding: 15px 24px;
   }
 `

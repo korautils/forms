@@ -40,6 +40,7 @@ const ButtonComponent: React.FC<ButtonProps> = ({
   className,
   tooltipTitle,
   children,
+  size = 'small',
   ...props
 }) => {
   const adjustedVariant = parseVariantOption(variant as string)
@@ -47,7 +48,7 @@ const ButtonComponent: React.FC<ButtonProps> = ({
   const renderButton = () => {
     return (
       <ButtonWrapper
-        className={classNames(className, {
+        className={classNames(className, `button-${size}`, {
           black: variant === 'black-camera',
           unshadow,
           circular,
@@ -55,6 +56,7 @@ const ButtonComponent: React.FC<ButtonProps> = ({
         variant={adjustedVariant}
         color={color}
         {...props}
+        size={size}
       >
         {variant === 'black-camera' && (
           <CameraAltIcon
