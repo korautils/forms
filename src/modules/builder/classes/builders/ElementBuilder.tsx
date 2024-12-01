@@ -24,7 +24,7 @@ import {
   LazyTimePickerModal,
   RadioGroupPreview,
   TextField,
-} from '../../lazy/elements'
+} from '@/modules/builder/lazy/elements'
 
 import {
   BasicSelectProps,
@@ -43,7 +43,7 @@ import {
   ElementProps,
   ElementRule,
   OriginElement,
-} from '../../interfaces/elements/types'
+} from '@/modules/builder/interfaces/elements/types'
 import { ELEMENT_TYPE } from '@/modules/builder/interfaces/elements/components'
 // import ButtonComponent from '@/components/shared/Button'
 import { getProp, isArrayEmpty } from '@/modules/core/utils'
