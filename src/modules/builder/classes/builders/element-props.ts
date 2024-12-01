@@ -18,6 +18,7 @@ export type CommonProps = Pick<
   | 'onChange'
   | 'className'
   | 'required'
+  | 'color'
 >
 
 const commonProps: Array<keyof CommonProps> = [
@@ -35,12 +36,13 @@ const commonProps: Array<keyof CommonProps> = [
   'className',
   'disabled',
   'required',
+  'color',
 ]
 
 export type InputProps = CommonProps &
   Pick<
     ElementProps,
-    'placeholder' | 'type' | 'inputProps' | 'InputProps' | 'onInput'
+    'placeholder' | 'type' | 'inputProps' | 'InputProps' | 'onInput' | 'color'
   >
 
 export type PasswordProps = InputProps

@@ -1,6 +1,6 @@
 import '@/App.css'
 import React from 'react'
-import { Box, Divider } from '@mui/material'
+import { Box, Divider, TextField } from '@mui/material'
 import { Fragment } from 'react/jsx-runtime'
 import { FormBuilder, ElementBuilder, FormHandlerProps } from '@/index'
 
@@ -39,6 +39,7 @@ function App() {
                   name: 'fullname',
                   label: 'Full name',
                   size: 'medium',
+                  color: 'secondary',
                 })
                 .addValidation({
                   type: 'string',

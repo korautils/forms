@@ -84,6 +84,26 @@ export type AvailableKeyProps = {
   [k in ELEMENT_TYPE]?: Array<AvailableProp>
 }
 
+type GenerateStringUnion<T> = Extract<
+  {
+    [Key in keyof T]: true extends T[Key] ? Key : never
+  }[keyof T],
+  string
+>
+
+export type DistributiveOmit<T, K extends keyof any> = T extends any
+  ? Omit<T, K>
+  : never
+
+export type Overwrite<T, U> = DistributiveOmit<T, keyof U> & U
+
+export type OverridableStringUnion<
+  T extends string | number,
+  U = {}
+> = GenerateStringUnion<Overwrite<Record<T, true>, U>>
+
+export interface TextFieldPropsColorOverrides {}
+
 export interface ElementProps {
   id?: string
   name?: string
@@ -120,6 +140,10 @@ export interface ElementProps {
   onInput?: any
   renderOption?: any
   disableCloseOnSelect?: boolean
+  color?: OverridableStringUnion<
+    'primary' | 'secondary' | 'error' | 'info' | 'success' | 'warning',
+    TextFieldPropsColorOverrides
+  >
   // watchStatePath?: string
 }
 

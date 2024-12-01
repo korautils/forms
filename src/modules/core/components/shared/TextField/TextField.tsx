@@ -8,7 +8,7 @@ interface Props extends ElementProps {
 }
 
 const TextField: React.FC<Props> = React.forwardRef(function Element(
-  { value, onChange, pattern, ...props },
+  { value, onChange, pattern, color, ...props },
   ref: any
 ) {
   const { formHandler, ...elementProps } = props
@@ -24,6 +24,7 @@ const TextField: React.FC<Props> = React.forwardRef(function Element(
   return (
     <MuiTextField
       {...(elementProps as any)}
+      color={color}
       value={value}
       onChange={handlePatternRegex}
     />
