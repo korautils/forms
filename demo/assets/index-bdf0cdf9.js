@@ -1,0 +1,1 @@
+import{R as f,h as d}from"./index-c0aa72f3.js";import{M as i}from"./TextField-e5c7ee1b.js";const x=f.forwardRef(function({value:r,onChange:a,pattern:e,color:o,...s},m){const{formHandler:u,...l}=s;return d(i,{...l,color:o,value:r,onChange:t=>{const{value:n}=t.target;if(!e||n===""||new RegExp(e).test(n)){a(t);return}}})}),p=x;export{p as default};
