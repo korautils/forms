@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { useTheme } from '@mui/material/styles'
+import { useTheme } from '@mui/material/styles/index'
 import { Divider } from '@mui/material'
 import { uuidv4 } from '@/modules/core/utils'
 import {

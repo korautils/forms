@@ -1,6 +1,6 @@
 import React from 'react'
 import { v4 as uuidv4 } from 'uuid'
-import { SxProps, Theme } from '@mui/material'
+import { SxProps, Theme } from '@mui/material/index'
 import {
   YupRule,
   YupSchema,
@@ -24,6 +24,8 @@ import {
   LazyTimePickerModal,
   RadioGroupPreview,
   TextField,
+  ButtonComponent,
+  TabsRenderer,
 } from '@/modules/builder/lazy/elements'
 
 import {
@@ -45,15 +47,13 @@ import {
   OriginElement,
 } from '@/modules/builder/interfaces/elements/types'
 import { ELEMENT_TYPE } from '@/modules/builder/interfaces/elements/components'
-// import ButtonComponent from '@/components/shared/Button'
 import { getProp, isArrayEmpty } from '@/modules/core/utils'
 // import { getProp } from '@/utils'
 import Select from '@/modules/core/components/shared/Select'
 import FormBuilder from '@/modules/builder/classes/builders/FormBuilder'
-import TabsRenderer from '@/modules/core/components/shared/TabsRenderer'
+// import TabsRenderer from '@/modules/core/components/shared/TabsRenderer'
 import Stepper from '@/modules/core/components/shared/Stepper'
-import ButtonComponent from '@/modules/core/components/shared/Button'
-import { ButtonProps } from '@/modules/core/components/shared/Button/ButtonComponent'
+import { ButtonProps } from '@/modules/core/components/shared/Button/types'
 
 type KeyProp = keyof ElementProps
 type VISIBILITY = 'VISIBLE' | 'GONE' | 'INVISIBLE'

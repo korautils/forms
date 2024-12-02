@@ -2,11 +2,18 @@ import React from 'react'
 import GroupButtonRenderer from '@/modules/core/components/shared/GroupButtonRenderer'
 import { Box } from '@mui/material'
 import { ELEMENT_TYPE } from '@/modules/builder/interfaces/elements/components'
-import TabsRenderer from '@/modules/core/components/shared/TabsRenderer'
 import { ElementItem } from '@/modules/core/components/common/ElementBuilderRenderer/types'
 // import es from 'dayjs/locale/es' // Importa el locale español de dayjs
 // import dayjs from 'dayjs'
 // dayjs.locale(es)
+
+export const TabsRenderer: any = React.lazy(
+  () => import('@/modules/core/components/shared/TabsRenderer')
+)
+
+export const ButtonComponent: any = React.lazy(
+  () => import('@/modules/core/components/shared/Button')
+)
 
 export const TextField: any = React.lazy(
   () => import('@/modules/core/components/shared/TextField')
